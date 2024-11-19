@@ -24,7 +24,7 @@ ini_set('error_reporting', E_ALL & ~E_DEPRECATED);
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/janasevakendra/';
+$config['base_url'] = 'https://janasevakendra.web.app';
 
 /*
 |--------------------------------------------------------------------------
