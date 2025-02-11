@@ -1,7 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+define("body_class", "sidebar-collapse layout-top-nav layout-navbar-fixed");
 ini_set('error_reporting', E_ALL & ~E_DEPRECATED);
 
+
+define("layout", "");/*-fluid*/
+define("body_style", "hold-transition sidebar-mini layout-fixed layout-navbar-fixed");
+/*
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

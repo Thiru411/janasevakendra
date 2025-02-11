@@ -1,5 +1,5 @@
-<?php include('inc/script-header.php'); ?>
-<?php include('inc/header.php'); ?>
+<?php include('script-header.php'); ?>
+<?php include('header.php'); ?>
 <section class="contact-section">
   <div class="container">
     <h1>Contact Us</h1> <!-- Reduced heading size and height -->
@@ -43,5 +43,5 @@
   </div>
 </section>
 
-<?php include('inc/footer.php'); ?>
-<?php include('inc/script-footer.php'); ?>
+<?php include('footer.php'); ?>
+<?php include('script-footer.php'); ?>

@@ -1,5 +1,5 @@
-<?php include('inc/script-header.php'); ?>
-<?php include('inc/header.php'); ?>
+<?php include('script-header.php'); ?>
+<?php include('header.php'); ?>
 <section class="hero-section text-center">
   <div class="container">
     <h1 class="display-4">About Jana Seva Kendra</h1>
@@ -94,5 +94,5 @@
   </div>
 </section>
 
-<?php include('inc/footer.php'); ?>
-<?php include('inc/script-footer.php'); ?>
+<?php include('footer.php'); ?>
+<?php include('script-footer.php'); ?>

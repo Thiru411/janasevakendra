@@ -1,5 +1,5 @@
-<?php include('inc/script-header.php'); ?>
-<?php include('inc/header.php'); ?>
+<?php include('script-header.php'); ?>
+<?php include('header.php'); ?>
 
 <section class="background-gradient-custom overflow-hidden">
   <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
@@ -62,5 +62,5 @@
   </div>
 </section>
 
-<?php include('inc/script-footer.php'); ?>
-<?php include('inc/footer.php'); ?>
+<?php include('script-footer.php'); ?>
+<?php include('footer.php'); ?>

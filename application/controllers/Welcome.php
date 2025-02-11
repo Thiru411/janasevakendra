@@ -24,7 +24,7 @@ class Welcome extends CI_Controller {
     {
 
         $this->session->userdata('time_zone');
-        date_default_timezone_set($this->session->userdata('time_zone'));
+       // date_default_timezone_set($this->session->userdata('time_zone'));
         $post_date = date('Y-m-d');
         $timestamp = date("Y-m-d H:i:s");
         $post_time = date("H:i:s");
@@ -103,13 +103,15 @@ class Welcome extends CI_Controller {
 
             // Set session data
             $session_data = array(
-				'user_session_name'=>$user[0]->name,
+				'user_session_first_name'=>$user[0]->first_name,
+                'user_session_last_name'=>$user[0]->last_name,
                 'user_session_id'   => $user[0]->id,
                 'user_session_email'     => $user[0]->email,
                 'user_session_type' => $user[0]->user_type, // Store user role
                 'logged_in' => TRUE,
             );
             $this->session->set_userdata($session_data);
+            
             $this->cm->update_session_id($user[0]->id, session_id());
 
             // Redirect based on user role
@@ -139,17 +141,38 @@ class Welcome extends CI_Controller {
     }
 	
 	public function super_admin_dashboard() {
-		$this->common_data();
-		$this->load->view('super_admin/dashboard');
+		$data=$this->common_data();
+        if ($this->session->userdata("user_session_id") == "" || $this->session->userdata("user_session_id") == null) {
+            redirect("/");
+        }
+		 
+		 $data['menu_open'] = "";
+		$data['menu_active'] = "dashboard";
+	
+		$this->load->view('dashboard',$data);
 	}
 	public function admin_dashboard() {
-		$this->common_data();
-		$this->load->view('admin/dashboard');
+        $data=$this->common_data();
+        if ($this->session->userdata("user_session_id") == "" || $this->session->userdata("user_session_id") == null) {
+            redirect("/");
+        }
+		 
+		 $data['menu_open'] = "";
+		$data['menu_active'] = "dashboard";
+	
+		$this->load->view('dashboard',$data);
 	}
 	
 	public function agent_dashboard() {
-		$this->common_data();
-		$this->load->view('agent/dashboard');
+		$data=$this->common_data();
+        if ($this->session->userdata("user_session_id") == "" || $this->session->userdata("user_session_id") == null) {
+            redirect("/");
+        }
+		 
+		 $data['menu_open'] = "";
+		$data['menu_active'] = "dashboard";
+	
+		$this->load->view('dashboard',$data);
 	}
 	public function register_process() {
         // Set form validation rules
