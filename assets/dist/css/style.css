@@ -2,3 +2,22 @@
     background-color: #76a728;
     border-color: #4b545c;
 }
+.content-header {
+    position: relative;
+    padding: 15px 15px 0 15px;
+}
+.content-header>.breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+.content-header>.breadcrumb>li+li:before {
+    content: '>\00a0';
+}

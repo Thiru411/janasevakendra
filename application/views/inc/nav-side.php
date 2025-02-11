@@ -31,30 +31,62 @@
             </a>
             
           </li>
-
-          <li class="nav-header">Blogs</li>
          
-
-          
-          <li class="nav-item <?php if($menu_open=="blogs"){?>menu-open<?php }?>">
+            <li class="nav-item <?php if($menu_open=="pan-card"){?>menu-open<?php }?>">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Blogs
+                Pan Card
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url() ?>blogs" class="nav-link <?php if($menu_active=="blogs-list"){?>active<?php }?>">
+                <a href="<?php echo base_url() ?>new-pan-apply" class="nav-link <?php if($sub_menu_active=="new-pan-apply"){?>active<?php }?>">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Blogs List</p>
+                  <p>New Application</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url() ?>blogs-add" class="nav-link <?php if($menu_active=="blogs-add"){?>active<?php }?>">
+                <a href="<?php echo base_url() ?>pan-correction-reprint" class="nav-link <?php if($sub_menu_active=="pan-correction-reprint"){?>active<?php }?>">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Blogs Add</p>
+                  <p>Correction/Reprint</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>pan-pending" class="nav-link <?php if($sub_menu_active=="pan-pending"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pending</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>pan-verification" class="nav-link <?php if($sub_menu_active=="pan-verification"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Verification</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>pan-approved" class="nav-link <?php if($sub_menu_active=="pan-approved"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Approved</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>already-pan" class="nav-link <?php if($sub_menu_active=="already-pan"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Already Pan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>hold-pan" class="nav-link <?php if($sub_menu_active=="hold-pan"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hold</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url() ?>rejected-pan" class="nav-link <?php if($sub_menu_active=="rejected-pan"){?>active<?php }?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rejected</p>
                 </a>
               </li>
          

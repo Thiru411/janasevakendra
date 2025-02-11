@@ -148,8 +148,9 @@ class Welcome extends CI_Controller {
 		 
 		 $data['menu_open'] = "";
 		$data['menu_active'] = "dashboard";
+		$data['sub_menu_active'] = "";
 	
-		$this->load->view('dashboard',$data);
+		$this->load->view('super_admin/dashboard',$data);
 	}
 	public function admin_dashboard() {
         $data=$this->common_data();
@@ -157,10 +158,11 @@ class Welcome extends CI_Controller {
             redirect("/");
         }
 		 
-		 $data['menu_open'] = "";
+		$data['menu_open'] = "";
 		$data['menu_active'] = "dashboard";
-	
-		$this->load->view('dashboard',$data);
+        $data['sub_menu_active'] = "";
+
+		$this->load->view('admin/dashboard',$data);
 	}
 	
 	public function agent_dashboard() {
@@ -169,10 +171,11 @@ class Welcome extends CI_Controller {
             redirect("/");
         }
 		 
-		 $data['menu_open'] = "";
+		$data['menu_open'] = "";
 		$data['menu_active'] = "dashboard";
-	
-		$this->load->view('dashboard',$data);
+        $data['sub_menu_active'] = "";
+
+		$this->load->view('agent/dashboard',$data);
 	}
 	public function register_process() {
         // Set form validation rules
@@ -201,5 +204,18 @@ class Welcome extends CI_Controller {
                 redirect('register');
             }
         }
+    }
+    
+    public function new_pan_apply(){
+        $data=$this->common_data();
+        if ($this->session->userdata("user_session_id") == "" || $this->session->userdata("user_session_id") == null) {
+            redirect("/");
+        }
+		 
+		$data['menu_open'] = "pan-card";
+		$data['menu_active'] = "pan-card";
+        $data['sub_menu_active'] = "new-pan-apply";
+
+		$this->load->view('agent/new-pan-apply',$data);  
     }
 }
