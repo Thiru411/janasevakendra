@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0070)https://ahara.karnataka.gov.in/fcs_verify_kser/ViewRC/dup_rc_view.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+
+</title>
+    
+
+    <script type="text/javascript">
+        function Print() {
+            //            document.getElementById("BtnPrint").style.visibility = "hidden";
+            document.getElementById("btnExit").style.visibility = "hidden";
+            window.print();
+            //            document.getElementById("BtnPrint").style.visibility = "visible";
+            document.getElementById("btnExit").style.visibility = "visible";
+        }
+
+        //disable ctrl+n,ctrl+r,shift+f10,rightclick,f5
+        var oLastBtn = 0, bIsMenu = false
+        if (window.Event) {
+            document.captureEvents(Event.MOUSEUP);
+        }
+
+
+        function nocontextmenu() {
+            event.cancelBubble = true;
+            event.returnValue = false;
+            return false;
+        }
+
+
+        function norightclick(e) {
+            if (window.Event) {
+                if (e.which != 1) {
+                    return false;
+                }
+            }
+            else
+                if (event.button != 1) {
+                    event.cancelBubble = true;
+                    event.returnValue = false;
+                    return false;
+                }
+        }
+
+
+        document.oncontextmenu = nocontextmenu;
+        document.onmousedown = norightclick;
+        document.onKeyDown = key;
+
+        function onKeyDown() {
+            if ((event.altKey) || ((event.keyCode == 8) && (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password")) || ((event.ctrlKey) && ((event.keyCode == 78) || (event.keyCode == 82) || (event.keyCode == 65) || (event.keyCode == 67) || (event.keyCode == 86))) || (event.keyCode == 116)) {
+                event.keyCode = 0;
+                event.returnValue = false;
+            }
+        }
+
+    </script>
+<style>#inspect-element-top-layer * { all: unset; }</style></head>
+<body oncut="return false;" oncopy="return false;" onpaste="retun false;">
+    <form name="form1" method="post" action="https://ahara.karnataka.gov.in/fcs_verify_kser/ViewRC/dup_rc_view.aspx" id="form1" class="setMargin">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="52D46B86">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Ur4xqy0Fej6yIGSn7ir4BHKpPb6I0WntlMPT2gk0SWGPKkBpGocAu1tGwNEwXCkwBg3A3D5OPRMnMjx51dr06cUTQ6svrqpdHJWGmcYEb70OUXmOmKzK/vXXUz0qclkI10cURMyloPDgpzb4hacp/GECSq4oqEDWoaTGTlNxfR4=">
+</div>
+    
+    <div>
+        <img src="./dup_rc_view.aspx_files/specimen.png" id="Img1" style="position: fixed;
+            width: 95%; height: 630px; left: 300; top: 0;">
+    </div>
+    <center>
+        
+        <table id="tblRCard" style="font-family: Verdana; font-size: 8pt; height: 566.93px; vertical-align: top;
+            padding-top: 20px;" cellpadding="0" cellspacing="0" width="843.7px">
+	<tbody><tr>
+		<td>
+                    <table width="100%" style="height: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="width: 380.95px; height: 100%; padding-left: 20px;" valign="top" align="center">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                        <td align="center" style="width: 331.63px; height: 431.69px">
+                                            <table style="height: 431.69px; width: 331.63px;" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="center" style="height: 20px;" valign="top">
+                                                        <span id="Label10" class="vfalse" style="font-size:8pt;">ಕುಟುಂಬದ ಸದಸ್ಯರ ವಿವರಗಳು</span>
+                                                        <br>
+                                                        <span id="Label12" class="vfalse" style="font-size:8pt;">Family Member's Detail</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top" style="padding-left: 25px; padding-top: 15px;" align="center">
+                                                        
+                                                                <table width="100%" border="1" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                            
+                                                                <tbody><tr>
+                                                                    <td style="border-collapse: collapse; border-bottom-width: 0; border-right-width: 0">
+                                                                        <table width="100%" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                                            <tbody><tr>
+                                                                                <td align="left">
+                                                                                    ನಭಿಸಾಬ್ <br> ಪತಿ (78)
+                                                                                    <br>
+                                                                                    NABHISAB
+                                                                                </td>
+                                                                                <td align="right">
+                                                                                    <img src="./dup_rc_view.aspx_files/NoImg.jpeg" id="rptMembers_ctl01_img" width="60" height="70">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </td>
+                                                            
+                                                                <td style="border-collapse: collapse;">
+                                                                    <table width="100%" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                                        <tbody><tr>
+                                                                            <td align="left">
+                                                                                ಕಲೀಲ್ ಸಾಬ್ ಪೀ <br> ಮಗ (32)
+                                                                                <br>
+                                                                                KALEEL SAB P
+                                                                            </td>
+                                                                            <td align="right">
+                                                                                <img src="./dup_rc_view.aspx_files/NoImg(1).jpeg" id="rptMembers_ctl02_img" width="60" height="70">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            
+                                                                </tr><tr>
+                                                                    <td style="border-collapse: collapse; border-bottom-width: 0; border-right-width: 0">
+                                                                        <table width="100%" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                                            <tbody><tr>
+                                                                                <td align="left">
+                                                                                    ಪಿಶರಿಫ್ <br> ಸೊಸೆ (26)
+                                                                                    <br>
+                                                                                    PSHARIF
+                                                                                </td>
+                                                                                <td align="right">
+                                                                                    <img src="./dup_rc_view.aspx_files/NoImg(2).jpeg" id="rptMembers_ctl03_img" width="60" height="70">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </td>
+                                                            
+                                                                <td style="border-collapse: collapse;">
+                                                                    <table width="100%" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                                        <tbody><tr>
+                                                                            <td align="left">
+                                                                                ಪಿ ಪೀರಜಾನ್ ಬೀ <br> ಮೊಮ್ಮಗಳು (5)
+                                                                                <br>
+                                                                                P PEERJAN BEE
+                                                                            </td>
+                                                                            <td align="right">
+                                                                                <img src="./dup_rc_view.aspx_files/NoImg(3).jpeg" id="rptMembers_ctl04_img" width="60" height="70">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            
+                                                                </tr><tr>
+                                                                    <td style="border-collapse: collapse; border-bottom-width: 0; border-right-width: 0">
+                                                                        <table width="100%" style="font-family: Verdana; font-size: 8pt;" cellpadding="0" cellspacing="0">
+                                                                            <tbody><tr>
+                                                                                <td align="left">
+                                                                                    ಮೌಲ ಅಲಿ ಪಿ <br> ಮೊಮ್ಮಗ (3)
+                                                                                    <br>
+                                                                                    MOULA ALI P
+                                                                                </td>
+                                                                                <td align="right">
+                                                                                    <img src="./dup_rc_view.aspx_files/NoImg(4).jpeg" id="rptMembers_ctl05_img" width="60" height="70">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </td>
+                                                            
+                                                                </tr></tbody></table>
+                                                            
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="width: 331.63px; height: 110px;">
+                                            <table id="Table1" style="width: 331.63px; height: 110px; font-size: 8pt;" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+                                                        <span id="Label15" class="vfalse">ಪಡಿತರ ವ್ಯವಸ್ಥೆಯ ಬಗ್ಗೆ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು ಇಲಾಖೆಯ <br> ವೆಬ್ ಸೈಟ್ http://ahara.kar.nic.in ಗೆ ಭೇಟಿ ನೀಡಿ <br> ಗ್ರಾಹಕರ ಸಹಾಯವಾಣಿ(ನಿಶುಲ್ಕ):1800-425-9339</span>
+                                                    </td>
+			</tr>
+			<tr>
+				<td align="center">
+                                                        <span id="Label17" class="vfalse">For additional Information on public distribution system <br> please visit department website http://ahara.kar.nic.in <br> Consumer Helpline (Toll Free): 1800-425-9339 </span>
+                                                    </td>
+			</tr>
+		</tbody></table>
+		
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                            <td style="width: 47.79px; height: 1806px;">
+                                &nbsp;
+                            </td>
+                            <td style="width: 392.95px; height: 1806px;" valign="top" align="center" >
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                        <td colspan="1">
+                                            <table width="100%" style="height: 100px;" cellpadding="0" cellspacing="0" style="background-color:#006400">
+                                                <tbody><tr>
+                                                    <td colspan="2">
+                                                        <table width="100%">
+                                                            <tbody><tr>
+                                                                <td align="left" valign="middle" style="width: 33%;">
+                                                                    <span id="lblAckNo" style="font-size:7pt;">208919424</span>
+                                                                </td>
+                                                                <td align="center" rowspan="1" style="width: 33%;">
+                                                                    <img id="Image1" class="vfalse" src="./dup_rc_view.aspx_files/govtlogo.jpg" style="height:50px;width:50px;border-width:0px;">
+                                                                </td>
+                                                                <td align="center" valign="top" style="width: 33%;">
+                                                                    <span id="lblCardTypeKan" style="font-family:Verdana;font-size:8pt;font-weight:bold;">ಆದ್ಯತಾ ಕುಟುಂಬ ಸೀಮೆಎಣ್ಣೆಗೆ ಅನರ್ಹ </span>
+                                                                    <br>
+                                                                    <span id="lblCardType1" style="font-family:Verdana;font-size:8pt;font-weight:bold;">Priority Household  Not Eligible for Kerosene</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <table width="100%" cellpadding="0" cellspacing="0" >
+                                                            <tbody><tr>
+                                                                <td>
+                                                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                                                        <tbody><tr>
+                                                                            <td align="center">
+                                                                                <span id="Label3" class="vfalse" style="font-family:Verdana;font-size:11pt;font-weight:bold;">ಕರ್ನಾಟಕ ಸರ್ಕಾರ</span><br>
+                                                                                <span id="Label4" class="vfalse" style="font-family:Verdana;font-size:11pt;font-weight:bold;">GOVERNMENT OF KARNATAKA</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" style="height: 75px;" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <span id="Label2" class="vfalse" style="font-family:Verdana;font-size:8pt;font-weight:bold;">ಆಹಾರ, ನಾಗರಿಕ ಸರಬರಾಜು ಮತ್ತು ಗ್ರಾಹಕರ ವ್ಯವಹಾರಗಳ ಇಲಾಖೆ</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="Label6" class="vfalse" style="font-family:Verdana;font-size:8pt;font-weight:bold;">Food, Civil Supplies and Consumer Affairs Department</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td align="left" style="width: 50%;">
+                                                                    <table id="Table2" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td style="width: 70%;">
+                                                                                <span id="lblTaluklbl" class="vfalse" style="font-family:Verdana;font-size:8pt;">ತಾಲ್ಲೂಕು :</span>
+                                                                            </td>
+				<td align="left">
+                                                                                <span id="lblTaluk" style="font-family:Verdana;font-size:8pt;font-weight:bold;padding-left: -20px;">ಸಿರುಗುಪ್ಪಾ</span>
+                                                                            </td>
+			</tr>
+		</tbody></table>
+		
+                                                                </td>
+                                                                <td align="left" style="width: 50%;">
+                                                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                                                        <tbody><tr>
+                                                                            <td align="left" style="width: 40%;">
+                                                                                <span id="lblDistrictlbl" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಜಿಲ್ಲೆ :</span>
+                                                                            </td>
+                                                                            <td align="left">
+                                                                                <span id="lblDistrict" style="font-family:Verdana;font-size:8pt;font-weight:bold;padding-left: -20px;">ಬಳ್ಳಾರಿ</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" style="height: 25px;" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="left">
+                                                        <table id="Table3" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="left" style="width: 70%;">
+                                                                    <span id="lblRCNoLabel" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಪಡಿತರ ಚೀಟಿಯ ಸಂಖ್ಯೆ  Ration Card No.: </span>
+                                                                </td>
+				<td align="right">
+                                                                    <span id="lblRCNoPRC" style="font-family:Verdana;font-size:8pt;font-weight:bold;padding-left: -20px;">550700139036</span>
+                                                                </td>
+			</tr>
+		</tbody></table>
+		
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 5px; padding-left: -10px;">
+                                            <table width="100%" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="left" style="width: 75px; height: 82px">
+                                                        <img id="imgHead" src="./dup_rc_view.aspx_files/NoImg(5).jpeg" style="border-width:0px;width: 70px; height: 80px; padding-left: -10px;">
+                                                    </td>
+                                                    <td align="left">
+                                                        <span id="lblHeadNameKan" style="font-family:Verdana;font-size:8pt;padding-left: -10px;">KHADARAMMA</span><br>
+                                                        <br>
+                                                        <span id="lblHeadNameEng" style="font-family:Verdana;font-size:8pt;padding-left: -10px;">ಖಾದರಮ್ಮ (63)</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="height: 70px; padding-top: 12px; padding-left: -10px;" valign="top">
+                                            <span id="lblAddressKan" style="display:inline-block;font-family:Verdana;font-size:8pt;width:340px;">S/O: ನಬಿ ಸಾಬ್
+ವಾರ್ಡ್ ನಂ 2
+
+ಗಾಂಧಿ ಗ್ರಾಮ
+
+ 583122</span><br>
+                                            <span id="lblAddressEng" style="display:inline-block;font-family:Verdana;font-size:8pt;width:340px;">S/O: NABI SAB
+WARD NO 2
+
+GANDHI GRAMA
+
+ 583122</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            <table width="80%" style="height: 35px" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="right">
+                                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td align="left" style="width: 90%;">
+                                                                    <span id="Label57" class="vfalse" style="font-family:Verdana;font-size:8pt;font-weight:bold;">ಸದಸ್ಯರ ಸಂಖ್ಯೆ Family Members :</span>
+                                                                </td>
+                                                                <td align="right" style="padding-top: 2px; padding-right: 30px;">
+                                                                    <span id="lblMemberCount" style="font-family:Verdana;font-size:8pt;">6</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <table width="100%" style="height: 40px" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="left" style="width: 50%;">
+                                                        <span id="lblLPGNoLabel" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಅನಿಲ ಗ್ರಾಹಕರ ಸಂಖ್ಯೆ ಮತ್ತು ಹೆಸರು :</span>
+                                                    </td>
+                                                    <td valign="top" rowspan="2" style="padding-left: 10px;" align="right">
+                                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td align="left" style="padding-top: 2px;">
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="width: 50%;">
+                                                        <span id="Label7" class="vfalse" style="font-family:Verdana;font-size:8pt;">Consumer No. &amp; Distributor's Name : </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <table id="Table4" width="100%" style="height: 85px;" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="left" valign="top" style="padding-left: -10px;">
+                                                        <span id="Label5" class="vfalse" style="font-family:Verdana;font-size:8pt;">ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿಯ ಸಂಖ್ಯೆ ಮತ್ತು ಹೆಸರು :</span>
+                                                        <br>
+                                                        <span id="Label9" class="vfalse" style="font-family:Verdana;font-size:8pt;">Fair Price Shop No. &amp; Name</span>
+                                                        <br>
+                                                        <span id="lblFPDNameKan" style="font-family:Verdana;font-size:8pt;">10-ವಿ.ಎಸ್‌.ಎಸ್‌.ಎಸ್.ಎನ್‌.ಬೂದುಗುಪ್ಪ</span>
+                                                        <br>
+                                                        <span id="lblFPDNameEng" style="font-family:Verdana;font-size:8pt;">10-V.S.S.S.N.Buduguppa <br> Buduguppa Village</span>
+                                                    </td>
+			</tr>
+		</tbody></table>
+		
+                                        </td>
+                                    </tr>                                    
+                                    <tr>
+                                        <td align="left">
+                                            
+                                            <table width="100%" cellpadding="0" cellspacing="0">
+                                                <tbody><tr>
+                                                    <td align="left" style="width: 55%;">
+                                                        <table id="Table5" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td>
+                                                                    <span id="Label11" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಕಛೇರಿಯ ದೂರವಾಣಿ ಸಂಖ್ಯೆ : </span>
+                                                                </td>
+				<td rowspan="2" style="padding-top: 2px;">
+                                                                    <span id="lblPhNo">08396-220037</span>
+                                                                </td>
+			</tr>
+			<tr>
+				<td>
+                                                                    <span id="Label14" class="vfalse" style="font-family:Verdana;font-size:8pt;">Office Phone No.: </span>
+                                                                </td>
+			</tr>
+		</tbody></table>
+		
+                                                    </td>
+                                                    <td align="left">
+                                                        <table id="Table6" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="left">
+                                                                    <span id="Label8" class="vfalse" style="font-size:8pt;">ದಿನಾಂಕ :</span>
+                                                                </td>
+				<td align="right" rowspan="2" style="padding-top: 2px; padding-right: 15px;">
+                                                                    <span id="lblRCIssueDate" style="font-family:Verdana;font-size:7pt;"></span>
+                                                                </td>
+			</tr>
+			<tr>
+				<td colspan="1" align="left">
+                                                                    <span id="Label13" class="vfalse" style="font-size:8pt;">Date :</span>
+                                                                </td>
+			</tr>
+		</tbody></table>
+		
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="width: 100%;">
+                                            <table id="tblRural" cssclass="vfalse" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td style="width: 21%;">
+                                                        <span id="lblPanch" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಪಂಚಾಯತಿ :</span>
+                                                    </td>
+				<td valign="top" align="left" style="text-align: left; width: 122px;">
+                                                        <span id="lblPanchayat" class="vfalse" style="font-family:Verdana;font-size:8pt;font-weight:bold;padding-left: -20px;
+                                                            padding-top: 2px;">ಬಲಕುಂದಿ</span>
+                                                    </td>
+				<td style="width: 12%;">
+                                                        <span id="Label1" class="vfalse" style="font-family:Verdana;font-size:8pt;">ಗ್ರಾಮ :</span>
+                                                    </td>
+				<td align="left" style="text-align: left;">
+                                                        <span id="lblVillage" class="vfalse" style="font-family:Verdana;font-size:8pt;font-weight:bold;padding-left: -20px;
+                                                            padding-top: 2px;"></span>
+                                                    </td>
+			</tr>
+		</tbody></table>
+		
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+	</tr>
+</tbody></table>
+
+        <table>
+            <tbody><tr>
+                <td align="center">
+                    <input type="submit" name="btnExit" value="Exit" id="btnExit" style="width:75px;">
+                </td>
+            </tr>
+        </tbody></table>
+        </center>
+    <input name="hidTRCNO" type="hidden" id="hidTRCNO">
+    <input name="hidPRCNO" type="hidden" id="hidPRCNO">
+    </form>
+
+
+<div id="inspect-element-top-layer" popover="auto" data-inspect-element="inspectElement" style="pointer-events: none; border: unset; padding: 0px;"></div></body></html>
